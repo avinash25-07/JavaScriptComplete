@@ -1,0 +1,2 @@
+
+// content = "JS"; //error
