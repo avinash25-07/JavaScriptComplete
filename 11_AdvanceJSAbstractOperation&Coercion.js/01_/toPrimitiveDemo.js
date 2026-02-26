@@ -1,16 +1,16 @@
 // toString
-// let obj = {
-//     toString() {
-        //By default gives [object Object] string
-//         // return "Lets Learn JAVASCRIPT";
-//         // return true;
-//         // return 10;
-//         return {name : "Lets Learn JAVASCRIPT"};
+let obj = {
+    toString() {
+        // By default gives [object Object] string
+        // return "Lets Learn JAVASCRIPT";
+        // return true;
+        // return 10;
+        return {name : "Lets Learn JAVASCRIPT"};
 
-//     }
-// }
-// console.log(obj.toString());
-// console.log(typeof obj.toString());
+    }
+}
+console.log(obj.toString());
+console.log(typeof obj.toString());
 
 //valueOf
 // let obj = {
@@ -65,18 +65,18 @@
 // console.log(100 - obj5);
 
 //Addition Operation
-let obj = {};
-console.log(10 + obj);  //obj.valueOf() ->object,  obj.toString() -> [object Object]  -> 10[object Object]
+// let obj = {};
+// console.log(10 + obj);  //obj.valueOf() ->object,  obj.toString() -> [object Object]  -> 10[object Object]
 
-let obj1 = {x : 9, y : 10};
-console.log(100 + obj1);
+// let obj1 = {x : 9, y : 10};
+// console.log(100 + obj1);
 
 
-let obj2 = {x: 7, valueOf() {return 99;}}
-console.log(100 + obj2);
+// let obj2 = {x: 7, valueOf() {return 99;}}
+// console.log(100 + obj2);
 
-let obj3 = {x: 7, toString() {return "88";}};
-console.log(90 + obj3);
+// let obj3 = {x: 7, toString() {return "88";}};
+// console.log(90 + obj3);
 
 
 // let obj4 = {x: 7, toString() {return {};}};
@@ -91,6 +91,6 @@ console.log(90 + obj3);
 // console.log(100 + obj6); // type error       
 // console.log(100 + obj6.toString());          
 
-let obj7 = {x: 7, toString() {return [10, 20];}};
-// console.log(100 + obj7); // type error
-console.log(100 + obj7.toString());
+// let obj7 = {x: 7, toString() {return [10, 20];}};
+// // console.log(100 + obj7); // type error
+// console.log(100 + obj7.toString());
