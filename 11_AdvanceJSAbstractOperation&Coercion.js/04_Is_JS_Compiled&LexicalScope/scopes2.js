@@ -3,7 +3,7 @@ var teacher = "Sanket";
 function fun() {
     var teacher = "Pulkit";
     // content;  // gets error b/c using here without assign
-    // content =  "JS";  //here content gets GC 
+    // content =  "JS";  //here content gets GC - b/c autoglobals
     var content;   //here content grts FC not global scope 
     console.log(teacher);
     console.log(content); // b/c of content gets FC print undefined
