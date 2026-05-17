@@ -3,4 +3,4 @@
 .env.local
 
 # file to be ignored
-run
+run.c
