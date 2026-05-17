@@ -1,0 +1,6 @@
+# environment variables
+.env
+.env.local
+
+# file to be ignored
+run

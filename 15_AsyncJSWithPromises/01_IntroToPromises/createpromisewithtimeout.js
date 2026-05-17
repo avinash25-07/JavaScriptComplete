@@ -6,10 +6,11 @@ function createPromiseWithTimeout() {
     return new Promise(function executor(resolve, reject){
         setTimeout(function(){
             let num = getRandomInt(10);
+            // let num = 10
             if(num % 2 == 0){
                 //if random number is even we fulfill
                 console.log("fulfilling");
-                resolve(num);
+                resolve(function resolveFun(){console.log("Passing in resolve");});
                 console.log("completed reslving");
                 // resolve(num, 10, 20);    // passing multiple values - value is zero b/c alwayls set first value to promise result property
                 resolve(10);
@@ -22,12 +23,18 @@ function createPromiseWithTimeout() {
                 console.log("completed rejecting");
                 reject(11);
                 console.log("rejecting again");
-                return num;
+                return num;  
             }
-        }, 10000); 
+        }, 1000); 
         console.log("Hii Avinash");
     });
 }
 
-let y = createPromiseWithTimeout();
-console.log(y);
+let y = createPromiseWithTimeout().
+    then(function handler(value){
+        // console.log(value());
+        return value;
+    });
+
+y.then((val) => val())
+  
