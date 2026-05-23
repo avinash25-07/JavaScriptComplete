@@ -5,3 +5,5 @@
 # file to be ignored
 *.c
 *.exe
+node_modules/
+
