@@ -41,5 +41,5 @@ x = download("www.xyz.com")
     return uploadFile(value, "www.upload.com");
 })
 .then(function processUpload(value) {
-    console.log("We have uploaded with", response);
+    console.log("We have uploaded with", value);
 })

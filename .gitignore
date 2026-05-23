@@ -3,4 +3,5 @@
 .env.local
 
 # file to be ignored
-run.c
+*.c
+*.exe

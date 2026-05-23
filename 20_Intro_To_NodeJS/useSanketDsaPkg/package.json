@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "advanceddsa.js": "^1.0.5"
+  }
+}

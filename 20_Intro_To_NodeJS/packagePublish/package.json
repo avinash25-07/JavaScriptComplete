@@ -1,0 +1,11 @@
+{
+  "name": "practicejs",
+  "version": "1.0.0",
+  "description": "Just making package for studying how to host package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "avinash",
+  "license": "ISC"
+}
