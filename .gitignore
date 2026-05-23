@@ -10,7 +10,9 @@
 *.exe
 
 # Dependencies
-node_modules/
+react-ssr-app/node_modules/
+useSanketDsaPkg/node_modules/
+**/node_modules/
 jspm_packages/
 web_modules/
 
